@@ -1,0 +1,27 @@
+
+%link{
+   text-decoration: none;
+}
+
+.header__link{
+   @extend .link;
+
+   position: relative;
+   display: block;
+   padding-top: 32px;
+   padding-bottom: 32px;
+   color: getColor('secondaryText');
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+
+   transition: color $reactionTime $cubicPrimery;
+
+   &:hover,
+   &:active,
+   &:focus{
+      color: getColor('accent');
+   }
+}

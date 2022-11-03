@@ -1,0 +1,8 @@
+.body{
+   min-width: 1600px;
+
+   background-color: getColor('backgroundPrimary');
+   color: getColor('textPrimary');
+
+   font-family: $fontFamilyPrimary;
+}

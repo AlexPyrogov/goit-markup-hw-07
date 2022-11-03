@@ -1,0 +1,46 @@
+.soclist{
+   display: flex;
+   margin: 0 32px 30px 32px;
+   padding: 0;
+}
+.soclist__item{
+   height: 44px;
+   width: 44px;
+   margin: 0;
+   margin-right: 10px;
+   list-style: none;
+   color: getColor('textPrimary');
+   background-color: getColor('backgroundSecondary');
+   border-radius: 50%;
+   
+   transition: color $reactionTime $cubicPrimary, background-color $reactionTime $cubicPrimary;
+
+   &:last-child{
+      margin: 0;
+   }
+
+   &:hover,
+   &:focus{
+      color: getColor('iconActive');
+      background-color: getColor('accent');
+   }
+}
+.soclist__link{
+   color: currentColor;
+}
+.soclist__icon {
+   height: 44px;
+   width: 44px;
+   padding: 12px;
+   fill: currentColor;
+   stroke: currentColor;
+}
+.footer__soclist--item {
+   color: getColor('textFooter');
+   background-color: getColor('iconFooter');
+   border-radius: 50%;
+   transition: background-color $reactionTime $cubicPrimary;
+}
+.footer__soclist{
+   margin-left: 0;
+}

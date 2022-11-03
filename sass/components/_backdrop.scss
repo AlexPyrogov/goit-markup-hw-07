@@ -1,0 +1,22 @@
+.backdrop{
+   position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+   
+      opacity: 1;
+      transform: scale(1);
+   
+      transition: opacity $reactionTime $cubicPrimary, transform $reactionTime $cubicPrimary;
+}
+.backdrop__is-hidden{
+   visibility: hidden;
+   opacity: 0;
+   pointer-events: none;
+
+   transform: scale(1.2);
+
+   transition: opacity $reactionTime $cubicPrimary, transform $reactionTime $cubicPrimary, visibility $reactionTime $cubicPrimary;
+}

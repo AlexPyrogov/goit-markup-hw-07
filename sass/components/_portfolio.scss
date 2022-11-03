@@ -1,0 +1,25 @@
+.portfolio{
+   padding-top: 94px;
+   padding-bottom: 94px;
+   padding-left: 215px;
+   padding-right: 215px;
+   min-width: 1600px;
+}
+.portfolio__sorting{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 50px;
+}
+.portfolio__sorting--item{
+   margin-right: 8px;
+   list-style: none;
+
+   &:last-child{
+      margin-right: 0;
+   }
+}
+.portfolio__projects{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+}

@@ -1,0 +1,39 @@
+
+%link{
+   text-decoration: none;
+}
+
+.header__link{
+   @extend %link;
+
+   position: relative;
+   display: block;
+   padding-top: 32px;
+   padding-bottom: 32px;
+   color: getColor('textSecondary');
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+
+   transition: color $reactionTime $cubicPrimary;
+
+   &:hover,
+   &:focus{
+      color: getColor('accent');
+   }
+}
+.header__link--conact{
+   color: getColor('textPrimary');
+}
+.header__link--current::before{
+   display: block;
+   position: absolute;
+   bottom: 0;
+   content: "";
+   height: 4px;
+   width: 100%;
+   background-color: getColor('accent');
+   border-radius: 2px;
+}

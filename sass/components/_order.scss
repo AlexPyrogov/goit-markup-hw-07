@@ -1,0 +1,124 @@
+.order{
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 14px;
+   margin: 0;
+
+   letter-spacing: 0.01em;
+   color: getColor('textPrimary');
+}
+.order__label{
+   position: relative;
+   display: block;
+   margin-bottom: 10px;
+   color: getColor('textSecondary');
+
+   &:focus-within{
+      color: getColor('accent');
+   }
+}
+.order__span{
+   color: getColor('textPrimary');
+}
+.order__icon{
+   position: absolute;
+   height: 18px;
+   width: 18px;
+   left: 12px;
+   bottom: 11px;
+   fill: currentColor;
+}
+.order__input{
+   width: 448px;
+   height: 40px;
+   margin-top: 4px;
+   border: 1px solid rgb(33, 33, 33, 0.2);
+   border-radius: 4px;
+   padding-left: 42px;
+   outline: none;
+   color: getColor('textSecondary');
+
+   &:focus,
+   &:active{
+      border-color: getColor('accent');
+   }
+}
+.order__check{
+   position: absolute;
+   top: 4px;
+   left: 4px;
+}
+.order__icon-check{
+   position: absolute;
+   top: 4px;
+   left: 4px;
+   display: inline-block;
+   width: 16px;
+   height: 15px;
+   outline: 2px solid getColor('textSecondary');
+   outline-offset: -2px;
+   background-color: getColor('backgroundPrimary');
+   border-radius: 2px;
+}
+ .order__check:checked + .order__icon-check{
+    background-image: url(../images/iconcheck.svg);
+    background-size: contain;
+    background-origin: border-box;
+    outline-color: getColor('accent');
+    transition: background-image $reactionTime $cubicPrimary;
+ }
+.order__agreement{
+   display: block;
+   margin-bottom: 30px;
+   line-height: 24px;
+   color:getColor('textPrimary');
+   text-align: center;
+}
+.order__agreement--link{
+   color: getColor('accent');
+}
+.order__agreement--box{
+   position: relative;
+   display: inline-block;
+   margin: 0;
+   padding-left: 27px;
+   font-family: $fontFamilyPrimary;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 24px;
+
+   letter-spacing: 0.03em;
+}
+.order__submit{
+   display: block;
+   min-width: 200px;
+   padding: 10px 32px;
+   margin-left: auto;
+   margin-right: auto;
+   color: getColor('textButton');
+   background-color: getColor('accent');
+   border-width: 0px;
+   border-radius: 4px;
+   text-align: center;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 30px;
+}
+.order__comment{
+   padding: 12px 16px;
+   width: 448px;
+   height: 120px;
+   margin-bottom: 20px;
+   resize: none;
+   color: rgba(117, 117, 117, 0.5);
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 14px;
+   letter-spacing: 0.01em;
+
+   &:focus,
+   &:active{
+      color: getColor('textSecondary');
+   }
+}

@@ -1,0 +1,120 @@
+.section{
+   padding-top: 94px;
+   padding-bottom: 94px;
+   padding-left: 215px;
+   padding-right: 215px;
+   min-width: 1600px;
+}
+
+.section__title{
+   color: getColor('textSecondary');
+   font-size: 36px;
+   margin-top: 0;
+   margin-bottom: 50px;
+   text-align: center;
+}
+.section__title--hidden{
+   opacity: 0;
+   pointer-events: none;
+   padding: 0;
+   margin: 0;
+}
+.section__list{
+   display: flex;
+   margin: 0;
+   padding: 0;
+}
+.section__item{
+   list-style: none;
+   margin-right: 30px;
+}
+.section__item:last-child {
+   margin: 0;
+}
+.section__transcendency{
+   font-size: 14px;
+   padding-bottom: 0;
+}
+.section__transcendency--icon{
+   height: 120px;
+   width: 270px;
+   margin-bottom: 30px;
+}
+.section__list--title{
+   margin-top: 0;
+   margin-bottom: 10px;
+   color: getColor('textSecondary');
+}
+.section__item--img{
+   position: relative;
+   height: 294px;
+}
+.section__img--title {
+   position: absolute;
+   bottom: 0;
+   height: 70px;
+   width: 100%;
+   margin: 0;
+   vertical-align: middle;
+   text-align: center;
+   font-family: $fontFamilyPrimary;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: getColor('titleSecondary');
+   background-image: linear-gradient(to right,
+         rgba(47, 48, 58, 0.8),
+         rgba(47, 48, 58, 0.8));
+}
+.section__img--title-pos{
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   white-space: nowrap;
+}
+.section__team{
+   font-size: 16px;
+   background-color: getColor('backgroundSecondary');
+}
+.section__team--item{
+   text-align: center;
+   background-color: getColor('backgroundPrimary');
+
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
+
+   transition: box-shadow $reactionTime $cubicPrimary;
+
+   &:hover{
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   }
+}
+.section__team--text{
+   margin-top: 0;
+   margin-bottom: 16px;
+}
+.section__customers--item{
+   height: 92px;
+   width: 170px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: getColor('iconPrimary');
+   border: 1px solid getColor('iconPrimary');
+   transition: color $reactionTime $cubicPrimary, border $reactionTime $cubicPrimary;
+
+   &:hover,
+   &:focus{
+      color: getColor('accent');
+      border-color: getColor('accent');
+   }
+}
+.section__customers--icon{
+   height: 60px;
+   width: 106px;
+   fill: currentColor;
+}

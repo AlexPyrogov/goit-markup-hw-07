@@ -1,0 +1,17 @@
+.hero{
+   padding: 200px 0;
+   background-color: getColor('backgroundHero');
+   background-image: linear-gradient(to right,
+         rgba(48, 49, 59, 0.4),
+         rgba(48, 49, 59, 0.4)),
+      url("../images/heroimg.jpg");
+   text-align: center;
+   min-width: 1600px;
+}
+.hero__title{
+   color: getColor('titleHero');
+   font-weight: 900;
+   font-size: 44px;
+   margin-top: 0;
+   margin-bottom: 30px;
+}
