@@ -1,6 +1,7 @@
 .card{
    list-style: none;
    width: 370px;
+   margin: 15px;
 
    &:hover{
       background-color: getColor('backgroundPrimary');

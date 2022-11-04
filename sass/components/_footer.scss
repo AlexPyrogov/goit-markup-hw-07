@@ -1,5 +1,5 @@
 .footer{
-   min-width: 1600px;
+   width: 1600px;
    background-color: getColor('backgroundFooter');
    color: getColor('textFooter');
    padding: 60px 215px;
@@ -36,11 +36,12 @@
    }
 }
 .footer__address--box{
+   margin-left: 0;
    margin-right: 70px;
 }
 .footer__soclist{
    margin-top: 12px;
-   margin-right: 90px;
+   margin-right: auto;
 }
 .footer__title{
    margin-top: 0;
@@ -53,15 +54,18 @@
    text-transform: uppercase;
 }
 .footer__subscrip{
+   position: relative;
    height: 86px;
    min-width: 570px;
    margin-top: 12px;
+   margin-right: 0;
+   margin-left: auto;
    border-color: currentColor;
 }
 .footer__email--input{
    appearance: none;
    display: inline-block;
-   width: 356px;
+   width: 358px;
    height: 50px;
 
    margin-right: 12px;

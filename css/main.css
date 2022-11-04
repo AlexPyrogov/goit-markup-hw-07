@@ -11,7 +11,7 @@
   align-items: center;
   padding: 0 215px;
   height: 80px;
-  min-width: 1600px;
+  width: 1600px;
 }
 
 .header__nav,
@@ -19,6 +19,7 @@
   display: flex;
   align-items: center;
   margin: 0;
+  padding: 0;
 }
 
 .header__item {
@@ -111,7 +112,7 @@
   background-color: #212121;
   background-image: linear-gradient(to right, rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)), url("../images/heroimg.jpg");
   text-align: center;
-  min-width: 1600px;
+  width: 1600px;
 }
 
 .hero__title {
@@ -151,8 +152,9 @@
 }
 
 .footer__button {
-  position: relative;
-  margin-bottom: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   padding-right: 62px;
 }
 
@@ -185,7 +187,7 @@
   padding-bottom: 94px;
   padding-left: 215px;
   padding-right: 215px;
-  min-width: 1600px;
+  width: 1600px;
 }
 
 .section__title {
@@ -558,7 +560,7 @@
 }
 
 .footer {
-  min-width: 1600px;
+  width: 1600px;
   background-color: #2f303a;
   color: #ffffff;
   padding: 60px 215px;
@@ -599,12 +601,13 @@
 }
 
 .footer__address--box {
+  margin-left: 0;
   margin-right: 70px;
 }
 
 .footer__soclist {
   margin-top: 12px;
-  margin-right: 90px;
+  margin-right: auto;
 }
 
 .footer__title {
@@ -619,16 +622,19 @@
 }
 
 .footer__subscrip {
+  position: relative;
   height: 86px;
   min-width: 570px;
   margin-top: 12px;
+  margin-right: 0;
+  margin-left: auto;
   border-color: currentColor;
 }
 
 .footer__email--input {
   appearance: none;
   display: inline-block;
-  width: 356px;
+  width: 358px;
   height: 50px;
   margin-right: 12px;
   padding: 15px 16px;
@@ -654,7 +660,7 @@
   padding-bottom: 94px;
   padding-left: 215px;
   padding-right: 215px;
-  min-width: 1600px;
+  width: 1600px;
 }
 
 .portfolio__sorting {
@@ -674,12 +680,13 @@
 .portfolio__projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  margin: -60px -60px 0 -60px;
 }
 
 .card {
   list-style: none;
   width: 370px;
+  margin: 15px;
 }
 .card:hover {
   background-color: #ffffff;
